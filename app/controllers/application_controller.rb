@@ -5,7 +5,8 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
-  get "/" do
+  get '/' do
+    # @breed = Dog.find_by(:breed)
   	erb :index
   end
 end
